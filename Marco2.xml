@@ -1,46 +1,69 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="227" inline="true" x="250" y="99">
+  <block type="controls_repeat" id="1" inline="true" x="301" y="-174">
     <value name="TIMES">
-      <block type="math_number" id="248">
+      <block type="math_number" id="2">
         <field name="NUM">4</field>
       </block>
     </value>
     <statement name="DO">
-      <block type="controls_whileUntil" id="389" inline="false">
-        <field name="MODE">WHILE</field>
-        <value name="NUMBER">
-          <block type="sensor_light" id="488">
-            <field name="LIGHT">LEFT</field>
+      <block type="controls_repeat" id="5" inline="true">
+        <value name="TIMES">
+          <block type="math_number" id="6">
+            <field name="NUM">133333</field>
           </block>
         </value>
         <statement name="DO">
-          <block type="controls_repeat" id="120" inline="true">
+          <block type="movement_forward" id="7"></block>
+        </statement>
+        <next>
+          <block type="controls_repeat" id="8" inline="true">
             <value name="TIMES">
-              <block type="math_number" id="139">
+              <block type="math_number" id="9">
+                <field name="NUM">18750</field>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="movement_left" id="10"></block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <next>
+      <block type="controls_repeat" id="347" inline="true">
+        <value name="TIMES">
+          <block type="math_number" id="270">
+            <field name="NUM">4</field>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="controls_repeat" id="298" inline="true">
+            <value name="TIMES">
+              <block type="math_number" id="263">
                 <field name="NUM">133333</field>
               </block>
             </value>
             <statement name="DO">
-              <block type="movement_forward" id="180"></block>
+              <block type="movement_reverse" id="368"></block>
             </statement>
             <next>
-              <block type="controls_repeat" id="197" inline="true">
+              <block type="controls_repeat" id="327" inline="true">
                 <value name="TIMES">
-                  <block type="math_number" id="211">
+                  <block type="math_number" id="291">
                     <field name="NUM">18750</field>
                   </block>
                 </value>
                 <statement name="DO">
-                  <block type="movement_left" id="190"></block>
+                  <block type="movement_right" id="358"></block>
                 </statement>
               </block>
             </next>
           </block>
         </statement>
+        <next>
+          <block type="movement_stop" id="11"></block>
+        </next>
       </block>
-    </statement>
-    <next>
-      <block type="movement_stop" id="420"></block>
     </next>
   </block>
 </xml>
